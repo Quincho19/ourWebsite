@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.cabecera{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(79, 172, 254, 0.5) 0%, rgb(0, 241, 254, 0.5) 100%) , url(../img/volcan.jpg);
+}
+
+.menu{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navegacion{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.navegacion a{
+    color: white;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/*Lo que nos gusta*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: aquamarine;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-info img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-servicio{
+    margin-bottom: 7px;
+    margin-top: 10px;
+    color:#a1c4fd;
+}
+
+.number{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    border-radius:50% ;
+    font-weight: 700%;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.galeria{
+    background-color: #fff;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    width: 30%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 5%;
+    transform: scale(0);
+    transition: tranform .3s .2s;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.testimony{
+    background-color:#e5e5f7 ;
+}
+
+.testimony_container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.testimony_body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column:2/3 ;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.testimony_body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.0s ease-in-out;
+}
+
+.testimony_img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 80%;
+}
+
+.testimony_text{
+    max-width: 700px;
+}
+
+.testimony_course{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding:10px ;
+    margin: 15px ;
+}
+
+.testimony_arrow{
+    width: 90%;
+    cursor: pointer;
+}
+
+
+
+#chava{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Raul, Quincho, Que hacemos, porque lo hacemos, lo que nos gusta">
+    <meta name="description" content="lo que hacemos, paginas, programadores, diseñadores, diseñadores web">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css"> 
+    <title>Los Primos</title>
+</head>
+<body>
+    <header class="cabecera" id="incio">
+        <img src="./svg/menu.svg" alt="menu, menu a la derecha, menu desplegable" class ="menu" >
+        <nav class="navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobreNosotros">Sobre Nosotros</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#registrarse">Registrarse</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Quincho y TheK!ddo</h1>
+            <p class="parrafo"> De Guatemala para el Mundo</p>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">Que nos gusta</h2>
+            <div class="contenedor-info">
+                <img src="./img/juego.jpg" alt="persona diseñando, diseñador, persona programando">
+                <div class="checklist-servicio">
+                    <div class="servicio">
+                    <h3 class="n-servicio"> <span class="number">1</span>Tocar guitarra</h3>
+                    <p>A los dos nos gusta la guitta ambos ticamos tanto guitarra acústica como electrica y somo amantes del metal y el rock</p>
+                    <h3 class="n-servicio"> <span class="number">2</span>VideoJuegos</h3>
+                    <p>Nos apasionan los videojuegos en general aunque más los de terror como la saga de Resident Evil</p>
+                    <h3 class="n-servicio"> <span class="number">3</span>Programar</h3>
+                    <p>Ambos somos programadores theK!ddo sabe mas de juegos y yo me dedico más a la programacion de páginas web mas<br>
+                    sobre todo al front-end  </p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="galeria" id="portafolio">
+            <div class="contededor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="./img/uno.jpg" alt="" class="img-galeria">
+                    <img src="./img/dos.jpg" alt="" class="img-galeria">
+                    <img src="./img/tres.jpg" alt="" class="img-galeria">
+                    <img src="./img/cuatro.jpg" alt="" class="img-galeria">
+                    <img src="./img/cinco.jpg" alt="" class="img-galeria">
+                    <img src="./img/seis.jpg" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+        <section class="testimony">
+            <div class="testimony_container">
+                <img src="./svg/izquierda.svg" alt="" class="testimony_arrow" id="before">
+                <section class="testimony_body testimony_body--show" data-id="1">
+                    <div class="testimony_text">
+                        <!--mire maje aqui si quiere ponga los nombres verdaderos de casa uno yo lo hice con apodos para que no quedara muy personal
+                        pero si lo quiere más profesional ponga los nombres-->
+                        <h2 class="subitle">Mi nombre es Quincho19. <span class="testimony_course">Programador front-end</span></h2>
+                        <p class="testimony_review">Trabajo los lenguajes de html, CSS, y javascript, diseñador de esta página</p>
+                    </div>
+
+                    <figure class="testimony_picture">
+                        <img src="./img/yo.jpeg" class = "testimony_img" alt="" >
+                    </figure>
+                </section>
+                        <section class="testimony_body" data-id="2">
+                            <div class="testimony_text">
+                                <h2 class="subitle">Mi nombre es TheK!ddo. <span class="testimony_course">Programador?</span></h2>
+                                <p class="testimony_review">Especializado en la programacion de videojuegos y aprendiz de back-end con el lenguaje PHP</p>
+                            </div>
+        
+                            <figure class="testimony_picture">
+                                <img src="./img/caca.jpg" class = "testimony_img" alt="" >
+                            </figure>
+                        </section>
+                        <img src="./svg/derecha.svg" alt="" class="testimony_arrow" id="next">
+                        </section>
+                    
+
+            </div>
+        </section>
+    </main>
+    <script src="./js/menu.js"></script>
+    <script src="./js/nosotros.js"></script>
+</body>
+</html>
